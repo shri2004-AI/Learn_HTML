@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="/submit.php">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="enter your name ">
+        </div>
+        <div>
+            <label for="Phone">Phone no </label>
+            <input id="Phone" type="tel" placeholder="enter your number ">
+        </div>
+        <div>
+            <label for="email">Email </label>
+            <input id="email" type="email" placeholder="enter your email ">
+        </div>
+          <div>
+            <label for="password">Password </label>
+            <input id="password" type="password" placeholder="enter your password ">
+        </div>
+        <div>
+            <label for="dob">Date of Birth </label>
+            <input id="dob" type="date" placeholder="enter your date of birth ">
+        </div>
+
+        <div>
+            <label for="gender">Gender  </label>
+            <select id="gender" required>
+                <option value="disabled selected">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- radio buttons for subscription plan  -->
+
+        <div>
+            <p>Subscription plan</p>
+            <input id="basic" type="radio" name="subscription" value="basic">
+            <label for="basic">Basic</label>
+
+            <input id="premium" type="radio" name="subscription" value="premium">
+            <label for="premium">Premium</label>
+
+            <input id="vip" type="radio" name="subscription" value="vip">
+            <label for="vip">VIP</label>
+        </div>
+
+        <div>
+            <label for="comments">Comments</label>
+            <textarea id="comments" placeholder="enter your comments " rows="4"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
